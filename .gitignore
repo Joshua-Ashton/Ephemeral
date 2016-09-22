@@ -1,0 +1,17 @@
+# Ephemeral Git Ignore
+
+# Doxygen and its files are not required.
+# Doxygen is stored on the Github pages.
+Doxyfile
+doxygen/*
+
+# Don't want any builds going up on Github that aren't under "releases", Git
+# doesn't like that.
+build/*
+
+# Don't want any project data, except for the binaries needed for generation.
+project/*/*
+!project/bin/*
+
+# Temp files.
+*~
